@@ -14,14 +14,14 @@ a {
 }
 
 body {
-    background: rgb(24, 24, 24);
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(12, 12, 12),rgb(22, 22, 21));
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(45deg, rgb(29, 29, 29), rgb(34, 33, 33),rgb(22, 22, 21));
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(24, 23, 23),rgb(22, 22, 21));
     padding-bottom: 10px;
 }
 
@@ -47,6 +47,7 @@ body {
 .container .more .icon {
     padding-left: 25px;
     display: flex;
+    cursor: pointer;
 }
 
 .container .more h4 {
@@ -55,16 +56,17 @@ body {
     align-items: center;
     padding-left: 25px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 /*filme principal*/
 
 .slide-film {
     font-size: 20px;
-    background-image: url(../img/film/filme-principal-carros.png);
+    background-image: url(../img/film/carros-edit.jpg);
     
     height: 60vh;
-    background-size: contain;
+    background-size: cover;
     background-image: no-repeat;
     background-position: center;
     
@@ -81,14 +83,23 @@ body {
 
 .container-film {
     padding-left: 50px;
-    border: red solid;
     width: 40%;
     font-weight: bold;
     text-align: justify;
+
+    display: block;
 }
 
 h3 {
     margin-bottom: 20px;
+}
+
+.slide-film .continue {
+    color: #000;
+    border: #fff solid;
+    display: flex;
+    box-sizing: border-box;
+    align-items: stretch;
 }
 
 .slide-film .sub {
@@ -114,7 +125,7 @@ h3 {
     font-size: 12px;
 
     cursor: pointer;
-    transition: .5s ease all;
+    transition: .3s ease all;
     border-radius: 2px;
     font-weight: bold;
 }
@@ -128,9 +139,8 @@ h3 {
 /*fim*/
 
 .botoes :hover {
-    background-color: white;
+    background-color: #fff;
     color: #000;
-    border: #000 solid;
 }
 
 /*imagens filmes*/
@@ -139,4 +149,17 @@ h3 {
     height: 100%;
     width: 100%;
     display: block;
+}
+
+/*------------- 1 carousel --------------*/
+
+.carousel-film h3 {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.item img {
+    cursor: pointer;
 }

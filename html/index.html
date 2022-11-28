@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/js.js"></script>
 
+    
+
     <!--Owl-->
     <link rel="stylesheet" href="../css/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css">
 
-    <title>Página inicial</title>
+    <title>NETFLIX</title>
 </head>
 <body>
     
@@ -26,11 +28,11 @@
                 <a href="#">Minha lista</a>
             </nav>
             <div class="more">
-                <img class="icon" src="../img/pesquisa-de-lupa.png" width="25px" alt="Lupa">
+                <img class="icon" src="../img/pesquisa-de-lupa.png" onmouseover="Tip('Buscar')" onmouseout="UnTip()" width="25px" alt="Lupa">
                 <h4>SHOUNEN</h4>
-                <img class="icon" src="../img/presente.png" width="25px" alt="Presente">
-                <img class="icon" src="../img/sino.png" width="25px" alt="Sino">
-                <img class="icon" src="../img/contato.png" width="25px" alt="Contato">
+                <img class="icon" src="../img/presente.png" onmouseover="Tip('Presentes')" onmouseout="UnTip()" width="25px" alt="Presente">
+                <img class="icon" src="../img/sino.png" onmouseover="Tip('Notificações')" onmouseout="UnTip()" width="25px" alt="Sino">
+                <img class="icon" src="../img/contato.png" onmouseover="Tip('Login')" onmouseout="UnTip()" width="25px" alt="Contato">
                 <img src="../img/seta.png" width="8px" height="10px" alt="Seta">
             </div>
         </div>
@@ -52,7 +54,7 @@
                     </button>
                 </div>
             </div>
-            <h3>TESTE</h3>
+            <h3 class="continue">TESTE</h3>
         </div>
     </main>
 
@@ -98,6 +100,7 @@
     <!-------------2 carousel----------------->
 
     <div class="carousel-film">
+        <h3 class="continue">Minha lista</h3>
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img src="../img/film-list-h/black-clover-h.jpeg" alt="Black clover" srcset="">
@@ -138,6 +141,7 @@
     
         <!-------------3 carousel----------------->
         <div class="carousel-film">
+            <h3 class="continue">Recomendado para você</h3>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img src="../img/film-list-h/black-clover-h.jpeg" alt="Black clover" srcset="">
@@ -175,8 +179,15 @@
             </div>
         </div>
 
+    <!--owl-->
     <script src="../js/owl/jquery.min.js"></script>
     <script src="../js/owl/owl.carousel.min.js"></script>
     <script src="../js/owl/setup.js"></script>
+
+    <!--wz-->
+    <script src="../js/wz_tooltip/wz_tooltip.js"></script>
+
+    <!--jsjs-->
+    <script src="../js/js.js"></script>
 </body>
 </html>
