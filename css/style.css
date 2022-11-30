@@ -27,15 +27,12 @@ body {
 
 .container nav {
     padding-right: 330px;
+    display: flex;
 }
 
 .container .logo {
     padding: 10px;
     padding-left: 50px;
-}
-
-.container nav {
-    display: flex;
 }
 
 .container .more {
@@ -69,7 +66,7 @@ body {
     background-size: cover;
     background-image: no-repeat;
     background-position: center;
-    
+
     color: #fff;
 
     display: flex;
@@ -95,11 +92,12 @@ h3 {
 }
 
 .slide-film .continue {
-    color: #000;
-    border: #fff solid;
+    color: #fff;
     display: flex;
     box-sizing: border-box;
     align-items: stretch;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .slide-film .sub {
@@ -108,6 +106,7 @@ h3 {
 
 .title {
     font-size: 40px;
+    margin-top: 70px;
 }
 
 .sub {
@@ -156,10 +155,123 @@ h3 {
 .carousel-film h3 {
     color: #fff;
     margin-left: 50px;
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 30px;
 }
 
 .item img {
     cursor: pointer;
+}
+
+.carousel-film .ranking {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 20px 0px 10px 0px;
+    font-size: 20px;
+}
+
+/*-------------- Parte responsiva ---------------*/
+
+@media screen and (max-width: 1246px) {
+    .container nav {
+        padding-right: 30px;        
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .container nav a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .container .more .icon {
+        width: 13px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container nav a {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container nav {
+        padding-right: 9px;        
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container .more .icon {
+        width: 13px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 927px) {
+    .container-film .btn {
+        padding: 15px 20px 15px 20px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container-film .title {
+        font-size: 30px;
+    }
+    .container-film .sub {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .container-film .btn {
+        padding: 10px 15px 10px 15px;
+    }
+    
+}
+
+@media screen and (max-width: 815px) {
+    .container nav {
+        display: none;
+    }
+
+    .container .more {
+        display: none;      
+    }
+
+    .container .more2 {
+        align-items: center;
+        display: flex;
+        padding-right: 20%;
+    }
+
+    .container .more2 a {
+        margin: 0px 25px 0 25px;
+    }
+}
+
+@media screen and (min-width: 816px) {
+    .container .more2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .container-film .btn {
+        padding: 8px 13px 18px 13px;
+    }
+    
+}
+
+@media screen and (max-width: 654px) {
+    .container .more2 {
+        padding-right: 30%;
+    }
+
+    .container .more2 a {
+        padding-right: 15%;
+    }
 }
